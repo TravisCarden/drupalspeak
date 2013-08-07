@@ -12,6 +12,7 @@ crontab
 crontabs
 ctools
 devel
+distros
 drupal
 Drupalcamp
 Drupalcamps
