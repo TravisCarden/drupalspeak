@@ -1,13 +1,22 @@
 #!/usr/bin/env sh
 
-# Abort if 'munchlist' isn't available.
-if ! command -v munchlist >/dev/null 2>&1; then
-  echo >&2 "This script requires 'ispell', which is currently not installed. Aborting."
-  exit 1
-fi
-
+project_name="drupalspeak"
 word_list_file="wordlist.txt"
-dictionary_file="drupalspeak.dic"
+dictionary_file="$project_name.dic"
+affix_file="$project_name.aff"
+
+check_dependencies() {
+  # Abort if 'munch' isn't available.
+  if ! command -v munch >/dev/null 2>&1; then
+    if command -v apt-get >/dev/null 2>&1; then
+      echo >&2 "This script requires 'hunspell-tools', which is currently not installed. You can install it by typing:"
+      echo >&2 "sudo apt-get install hunspell-tools"
+    else
+      echo >&2 "This script requires 'hunspell-tools', which is currently not installed."
+    fi
+    exit 1
+  fi
+}
 
 normalize_source_word_list() {
   # Alphabetize and remove duplicates.
@@ -17,11 +26,10 @@ normalize_source_word_list() {
 }
 
 create_dictionary_file_from_source_word_list() {
-  # Munch (compress) word list.
-  munchlist "$word_list_file" > "$dictionary_file"
-  # Prepend line count to dictionary file.
-  sed -i -e "1i `wc -l < ${dictionary_file}`" "$dictionary_file"
+  # Munch (encode/compress) word list.
+  munch "$word_list_file" "$affix_file" > "$dictionary_file" 2> /dev/null
 }
 
+check_dependencies
 normalize_source_word_list
 create_dictionary_file_from_source_word_list
