@@ -1,4 +1,4 @@
-62
+68
 akamai
 cck
 crontab/S
@@ -33,6 +33,7 @@ syslog
 wysiwyg/S
 Drupalcamp/S
 memcache/D
+microsite
 nginx
 PaaS
 pathauto
@@ -43,8 +44,10 @@ unsanitized
 adaptivetheme
 chx
 drush
+govdelivery
 panopoly
 repo/S
+RSS
 themer/S
 versioning
 webform/S
@@ -55,9 +58,12 @@ cron
 css
 Druplicon/S
 exportables
+imce
 jquery
 localhost
+preprocess/S
 rebase/GSD
 scss
 theming
+userplus
 versioned
