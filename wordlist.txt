@@ -14,6 +14,7 @@ crontab
 crontabs
 css
 ctools
+datetime
 devel
 distros
 drupal
@@ -26,9 +27,12 @@ Druplicon
 Druplicons
 drush
 exportables
+geofield
+git
 govdelivery
 Greasemonkey
 imce
+jmeter
 jquery
 js
 localhost
@@ -39,6 +43,7 @@ mollom
 mortendk
 mysql
 nginx
+nodequeue
 PaaS
 panelizer
 panopoly
@@ -67,10 +72,14 @@ spambot
 spambots
 symfony
 syslog
+textarea
+textfield
+themekey
 themer
 themers
 theming
 unsanitized
+url
 userplus
 versioned
 versioning
@@ -82,4 +91,5 @@ workflows
 wysiwyg
 wysiwygs
 xjm
+xpath
 yaml
