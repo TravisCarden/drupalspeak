@@ -1,6 +1,7 @@
 Acquia
 adaptivetheme
 akamai
+backport
 BADCamp
 BADCamps
 cck
@@ -61,6 +62,8 @@ redis
 refactored
 refactoring
 refactors
+renderable
+renderables
 repo
 repos
 RSS
@@ -70,8 +73,11 @@ scss
 skinr
 spambot
 spambots
+subdomain
+subdomains
 symfony
 syslog
+tableselect
 textarea
 textfield
 themekey
