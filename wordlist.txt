@@ -73,6 +73,10 @@ scss
 skinr
 spambot
 spambots
+subaddress
+subaddressed
+subaddresses
+subaddressing
 subdomain
 subdomains
 symfony
