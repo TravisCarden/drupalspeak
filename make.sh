@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 project_name="drupalspeak"
-word_list_file="wordlist.txt"
+word_list_file="$project_name.txt"
 dictionary_file="$project_name.dic"
 affix_file="$project_name.aff"
 
