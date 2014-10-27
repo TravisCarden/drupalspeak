@@ -1,4 +1,4 @@
-83
+84
 backport
 cck
 drush
@@ -45,6 +45,7 @@ adaptivetheme
 chx
 contrib
 distros
+drushrc
 geofield
 memcache/D
 microsite

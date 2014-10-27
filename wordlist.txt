@@ -27,6 +27,7 @@ drupalspeak
 Druplicon
 Druplicons
 drush
+drushrc
 exportables
 geofield
 git
